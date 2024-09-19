@@ -8,18 +8,18 @@
 number = input("choose a random positive number: ")
 
 if number.isdigit() and int(number) > 0:
+
     i = 1
     multi_sum = 1
-
     while i <= int(number):
         if i % 2 == 1: #odd
             # sum = sum * i
             multi_sum *= i
-        i += 1
+        i += 1 
 
     if multi_sum > 100:
         print("Multiplication exceeded")
     else:
         print(multi_sum)
 else:
-   print("only positive number is accepted")
+   print("only positive numbers are accepted")
